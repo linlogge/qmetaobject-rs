@@ -663,7 +663,7 @@ pub fn qml_register_singleton_type<T: QObject + QSingletonInit + Sized + Default
 /// [qt]: https://doc.qt.io/qt-5/qtqml-cppintegration-overview.html
 // XXX: replace link with real documentation, when it will be generated.
 #[cfg(qt_5_14)]
-pub fn qml_register_singleton_instance<T: QObject + Sized + Default>(
+pub fn qml_register_singleton_instance<T: QObject + Sized>(
     uri: &CStr,
     version_major: u32,
     version_minor: u32,
